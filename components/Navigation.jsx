@@ -73,7 +73,11 @@ const Navigation = () => {
                     </Link>
                 </div>
                 <Link href="/قیمت-روز-روغن-و-فیلتر-خوردو">
-                    <a className="mx-auto block w-full bg-stone-100 pt-1.5 pb-6 text-center font-bold text-stone-600/80">
+                    <a
+                        className={`mx-auto w-full bg-stone-100 pt-1.5 pb-6 text-center font-bold text-stone-600/80 ${
+                            pathname === "/price-list" ? "hidden" : "block"
+                        }`}
+                    >
                         <span>
                             قیمت روز <span className="font-extrabold text-orange-500">روغــــــن</span> و{" "}
                             <span className="font-extrabold text-orange-500">فــــــیلتر</span> خودرو
