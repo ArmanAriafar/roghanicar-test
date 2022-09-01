@@ -5,9 +5,9 @@ import Navigation from "../components/Navigation";
 const HomePage = () => {
     return (
         <>
-            <header className="bgPrimaryLinearGradient hidden w-full py-3 lg:inline-block">
-                <div className="mx-auto flex w-full max-w-5xl items-center justify-between">
-                    <ul className="flex items-center justify-center">
+            <header className="bgPrimaryLinearGradient sticky top-0 mx-auto w-full py-3 lg:relative lg:top-auto">
+                <div className="mx-auto flex w-full max-w-5xl items-center justify-center lg:justify-between">
+                    <ul className="hidden items-center justify-center lg:flex">
                         <li>
                             <Link href={{ pathname: "محصولات", query: { filterBy: "روغن-موتور" } }}>
                                 <a className="border-l-2 border-white/50 pl-7 text-sm font-extrabold text-white underline-offset-2 hover:underline">
@@ -44,7 +44,10 @@ const HomePage = () => {
                             </Link>
                         </li>
                     </ul>
-                    <a href="#" className="text-sm font-extrabold text-white underline-offset-2 hover:underline">
+                    <a
+                        href="https://wa.me/0989352870073?text=سلام%20یک%20سوال%20داشتم"
+                        className="text-sm font-extrabold text-white underline-offset-2 hover:underline"
+                    >
                         <span className="text-xs font-bold">پشتیبانی واتساپ:</span> 0073 287 0935
                     </a>
                 </div>
