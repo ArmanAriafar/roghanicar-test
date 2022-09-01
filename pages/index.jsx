@@ -144,40 +144,40 @@ const HomePage = () => {
                             <div className="w-full border-t-2 border-dotted border-orange-500" />
                         </header>
                         <section className="mx-auto mt-10 grid w-full max-w-xs lg:max-w-none grid-cols-2 items-center justify-items-center gap-9 lg:grid-cols-6">
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="موبیل" src="/static/images/موبیل.png" width="121" height="50" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="ایرانول" src="/static/images/ایرانول.png" width="120" height="62" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="الف" src="/static/images/الف.png" width="114" height="58" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="کاسترول" src="/static/images/کاسترول.png" width="125" height="42" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="کاسپین" src="/static/images/کاسپین.png" width="125" height="73" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="بهران" src="/static/images/بهران.png" width="116" height="116" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="توتال" src="/static/images/توتال.png" width="113" height="113" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="اسپیدی" src="/static/images/اسپیدی.png" width="112" height="47" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="سرکان" src="/static/images/سرکان.png" width="107" height="107" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="پروفی-کار" src="/static/images/پروفی-کار.png" width="130" height="68" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="نفت-پارس" src="/static/images/نفت-پارس.png" width="107" height="103" />
                             </article>
-                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
                                 <Image alt="موتوسل" src="/static/images/موتوسل.png" width="128" height="54" />
                             </article>
                         </section>
