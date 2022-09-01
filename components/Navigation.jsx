@@ -29,62 +29,46 @@ const Navigation = () => {
     if (screenWidth <= 1023) {
         //* Mobile
         return (
-            <nav className="fixed bottom-0 right-0 z-[200] w-full border-t-4 border-orange-500 bg-white pt-2">
+            <nav className="fixed bottom-0 right-0 z-[200] inline-block w-full border-t-4 border-orange-500 bg-white pt-2 lg:hidden">
                 <div className="mx-auto grid w-full max-w-md grid-cols-4 items-center justify-items-center pb-2">
                     <Link href="/">
                         <a
-                            className={`flex flex-col items-center justify-center ${
+                            className={`flex flex-col items-center justify-center font-black ${
                                 pathname === "/" ? "font-black text-orange-500" : "font-bold text-stone-500/90"
                             }`}
                         >
-                            {pathname === "/" ? (
-                                <FaHome className="text-3xl" />
-                            ) : (
-                                <TiHomeOutline className="text-3xl" />
-                            )}
-                            <span className="-mt-1">{pathname === "/" && "خانــــــه"}</span>
+                            {pathname === "/" && <FaHome className="text-3xl" />}
+                            خانــــــه
                         </a>
                     </Link>
                     <Link href="/محصولات">
                         <a
-                            className={`flex flex-col items-center justify-center ${
+                            className={`flex flex-col items-center justify-center font-black ${
                                 pathname === "/products" ? "font-black text-orange-500" : "font-bold text-stone-500/90"
                             }`}
                         >
-                            {pathname === "/products" ? (
-                                <RiOilFill className="text-3xl" />
-                            ) : (
-                                <RiOilLine className="text-3xl" />
-                            )}
-                            <span className="-mt-1">{pathname === "/products" && "محصولات"}</span>
+                            {pathname === "/products" && <RiOilFill className="text-3xl" />}
+                            محصولات
                         </a>
                     </Link>
                     <Link href="/فاکتور-من">
                         <a
-                            className={`flex flex-col items-center justify-center ${
+                            className={`flex flex-col items-center justify-center font-black ${
                                 pathname === "/cart" ? "font-black text-orange-500" : "font-bold text-stone-500/90"
                             }`}
                         >
-                            {pathname === "/cart" ? (
-                                <RiFileList3Fill className="text-3xl" />
-                            ) : (
-                                <RiFileList3Line className="text-3xl" />
-                            )}
-                            <span className="-mt-1">{pathname === "/cart" && "فاکتور من"}</span>
+                            {pathname === "/cart" && <RiFileList3Fill className="text-3xl" />}
+                            فاکتور من
                         </a>
                     </Link>
                     <Link href="/ورود-به-اکانت">
                         <a
-                            className={`flex flex-col items-center justify-center ${
+                            className={`flex flex-col items-center justify-center font-black ${
                                 pathname === "/login" ? "font-black text-orange-500" : "font-bold text-stone-500/90"
                             }`}
                         >
-                            {pathname === "/login" ? (
-                                <RiUserAddFill className="text-3xl" />
-                            ) : (
-                                <RiUserAddLine className="text-3xl" />
-                            )}
-                            <span className="-mt-1">{pathname === "/login" && "ورود"}</span>
+                            {pathname === "/login" && <RiUserAddFill className="text-3xl" />}
+                            ورود
                         </a>
                     </Link>
                 </div>
