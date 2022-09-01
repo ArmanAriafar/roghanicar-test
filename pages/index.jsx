@@ -2,12 +2,20 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
+import Head from "next/head";
 
 import { RiOilFill, RiUserAddFill } from "react-icons/ri";
 
 const HomePage = () => {
     return (
         <>
+            <Head>
+                <title>🚗 روغنی کار | فروش انواع روغن موتور و فیلتر خودرو 🚗</title>
+                <meta
+                    name="description"
+                    content="روغن موتور | فروش روغن موتور | قیمت روغن موتور | فیلتر هوا | فیلتر روغن | ضد یخ"
+                />
+            </Head>
             <header className="bgPrimaryLinearGradient sticky top-0 z-[199] mx-auto w-full py-3 lg:relative lg:top-auto">
                 <div className="mx-auto flex w-full max-w-5xl items-center justify-center lg:justify-between">
                     <ul className="hidden items-center justify-center lg:flex">
@@ -75,10 +83,10 @@ const HomePage = () => {
                         <section className="flex w-full flex-col items-center justify-start">
                             <hgroup>
                                 <h1 className="hidden">روغنی کار</h1>
-                                <h2 className="bgHalfOrange text-5xl font-thin text-orange-500">روغنـــــــــی‌کار</h2>
+                                <h2 className="bgHalfOrange text-5xl font-thin text-orange-500">روغنــــــــی‌کار</h2>
                             </hgroup>
-                            <p className="mt-1 text-xl font-extrabold text-stone-500">
-                                فروش انواع <span className="text-orange-500">روغــن</span> و{" "}
+                            <p className="mt-1 text-base font-extrabold text-stone-500">
+                                فروش انواع <span className="text-orange-500">روغــن موتور</span> و{" "}
                                 <span className="text-orange-500">فیــلتر</span> خودرو
                             </p>
                             {/* button Container */}
