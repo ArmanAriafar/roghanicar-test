@@ -4,7 +4,7 @@ import Link from "next/link";
 import Navigation from "../components/Navigation";
 import Head from "next/head";
 
-import { RiOilFill, RiUserAddFill } from "react-icons/ri";
+import { RiCheckboxFill, RiGridLine, RiOilFill, RiUserAddFill } from "react-icons/ri";
 
 const HomePage = () => {
     return (
@@ -82,8 +82,8 @@ const HomePage = () => {
                         {/* Content Container */}
                         <section className="flex w-full flex-col items-center justify-start">
                             <hgroup>
-                                <h1 className="hidden">روغنی کار</h1>
-                                <h2 className="bgHalfOrange text-5xl font-thin text-orange-500">روغنــــــــی‌کار</h2>
+                                <h6 className="hidden">روغنی کار</h6>
+                                <h5 className="bgHalfOrange text-5xl font-thin text-orange-500">روغنــــــــی‌کار</h5>
                             </hgroup>
                             <p className="mt-1 text-base font-extrabold text-stone-500">
                                 فروش انواع <span className="text-orange-500">روغــن موتور</span> و{" "}
@@ -112,6 +112,74 @@ const HomePage = () => {
                                     </a>
                                 </Link>
                             </div>
+                        </section>
+                    </section>
+                    {/* Best Sellers | Oil */}
+                    <section className="mt-14 flex w-full flex-col items-start justify-start">
+                        <header className="flex w-full items-center justify-center gap-x-2">
+                            <h1 className="bgHalfOrangeAlpha flex items-center justify-center gap-x-1 whitespace-nowrap text-base font-black text-orange-500">
+                                <RiOilFill className="text-xl" />
+                                پرفروشترین‌ها | روغن
+                            </h1>
+                            <div className="w-full border-t-2 border-dotted border-orange-500" />
+                        </header>
+                    </section>
+                    {/* Best Sellers | Filter */}
+                    <section className="mt-14 flex w-full flex-col items-start justify-start">
+                        <header className="flex w-full items-center justify-center gap-x-2">
+                            <h2 className="bgHalfOrangeAlpha flex items-center justify-center gap-x-1 whitespace-nowrap text-base font-black text-orange-500">
+                                <RiGridLine className="text-xl" />
+                                پرفروشترین‌ها | فیلتر
+                            </h2>
+                            <div className="w-full border-t-2 border-dotted border-orange-500" />
+                        </header>
+                    </section>
+                    {/* Brands */}
+                    <section className="mt-14 flex w-full flex-col items-start justify-start">
+                        <header className="flex w-full items-center justify-center gap-x-2">
+                            <h2 className="bgHalfOrangeAlpha flex items-center justify-center gap-x-1 whitespace-nowrap text-base font-black text-orange-500">
+                                <RiCheckboxFill className="text-xl" />
+                                برندها و شرکت‌های سازنده
+                            </h2>
+                            <div className="w-full border-t-2 border-dotted border-orange-500" />
+                        </header>
+                        <section className="mx-auto mt-10 grid w-full max-w-xs lg:max-w-none grid-cols-2 items-center justify-items-center gap-9 lg:grid-cols-6">
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="موبیل" src="/static/images/موبیل.png" width="121" height="50" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="ایرانول" src="/static/images/ایرانول.png" width="120" height="62" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="الف" src="/static/images/الف.png" width="114" height="58" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="کاسترول" src="/static/images/کاسترول.png" width="125" height="42" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="کاسپین" src="/static/images/کاسپین.png" width="125" height="73" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="بهران" src="/static/images/بهران.png" width="116" height="116" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="توتال" src="/static/images/توتال.png" width="113" height="113" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="اسپیدی" src="/static/images/اسپیدی.png" width="112" height="47" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="سرکان" src="/static/images/سرکان.png" width="107" height="107" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="پروفی-کار" src="/static/images/پروفی-کار.png" width="130" height="68" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="نفت-پارس" src="/static/images/نفت-پارس.png" width="107" height="103" />
+                            </article>
+                            <article className="bannerCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
+                                <Image alt="موتوسل" src="/static/images/موتوسل.png" width="128" height="54" />
+                            </article>
                         </section>
                     </section>
                 </article>

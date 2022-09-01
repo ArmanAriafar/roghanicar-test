@@ -9,11 +9,24 @@
     filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.3));
 }
 
+.bannerCardShadow {
+    filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.2));
+}
+
 .bgHalfOrange {
     background: linear-gradient(
         0deg,
         rgba(249, 115, 22, 0.5) 0%,
         rgba(249, 115, 22, 0.5) 45%,
+        rgba(249, 115, 22, 0) 45%,
+        rgba(249, 115, 22, 0) 100%
+    );
+}
+.bgHalfOrangeAlpha {
+    background: linear-gradient(
+        0deg,
+        rgba(249, 115, 22, 0.2) 0%,
+        rgba(249, 115, 22, 0.2) 45%,
         rgba(249, 115, 22, 0) 45%,
         rgba(249, 115, 22, 0) 100%
     );
