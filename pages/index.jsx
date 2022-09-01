@@ -1,11 +1,14 @@
 //! Required
+import Image from "next/image";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
+
+import { RiOilFill, RiUserAddFill } from "react-icons/ri";
 
 const HomePage = () => {
     return (
         <>
-            <header className="bgPrimaryLinearGradient sticky top-0 mx-auto w-full py-3 lg:relative lg:top-auto">
+            <header className="bgPrimaryLinearGradient sticky top-0 mx-auto w-full py-3 lg:relative lg:top-auto z-[199]">
                 <div className="mx-auto flex w-full max-w-5xl items-center justify-center lg:justify-between">
                     <ul className="hidden items-center justify-center lg:flex">
                         <li>
@@ -53,7 +56,57 @@ const HomePage = () => {
                 </div>
             </header>
             <Navigation />
-            <>HomePage</>
+            <main>
+                <article className="mx-auto w-full max-w-md px-4 lg:max-w-5xl">
+                    {/* Header Section */}
+                    <section className="mt-6 flex w-full flex-col items-center justify-center gap-x-10 gap-y-10 lg:mt-10 lg:flex-row">
+                        {/* Image Container */}
+                        <section className="mainBannerShadow w-full max-w-md">
+                            <Image
+                                alt="Banner"
+                                src="/static/images/OilBanner.png"
+                                width="512"
+                                height="364"
+                                layout="responsive"
+                            />
+                        </section>
+                        {/* Content Container */}
+                        <section className="flex w-full flex-col items-center justify-start">
+                            <hgroup>
+                                <h1 className="hidden">روغنی کار</h1>
+                                <h2 className="bgHalfOrange text-5xl font-thin text-orange-500">روغنـــــــــی‌کار</h2>
+                            </hgroup>
+                            <p className="mt-1 text-xl font-extrabold text-stone-500">
+                                فروش انواع <span className="text-orange-500">روغــن</span> و{" "}
+                                <span className="text-orange-500">فیــلتر</span> خودرو
+                            </p>
+                            {/* button Container */}
+                            <div className="mt-10 grid w-full grid-rows-2 items-center justify-items-center gap-x-2 gap-y-2 px-10 lg:grid-cols-2 lg:px-14">
+                                <Link href="/محصولات">
+                                    <a
+                                        className="
+                                        bgPrimaryLinearGradient order-2 flex w-full items-center justify-center gap-x-1 rounded-full py-2.5 text-center text-base
+                                        font-extrabold text-white shadow-xl shadow-orange-500/50 duration-300 hover:translate-y-1 hover:shadow-none lg:order-1"
+                                    >
+                                        <RiOilFill className="text-xl" />
+                                        مشاهده محصولات
+                                    </a>
+                                </Link>
+                                <Link href="/ورود-به-اکانت">
+                                    <a
+                                        className="
+                                        order-1 flex w-full items-center justify-center gap-x-1 rounded-full py-2.5 text-center text-base font-extrabold text-orange-500
+                                        duration-500 hover:bg-orange-200 lg:order-2"
+                                    >
+                                        <RiUserAddFill className="text-xl" />
+                                        ورود به اکانت
+                                    </a>
+                                </Link>
+                            </div>
+                        </section>
+                    </section>
+                </article>
+            </main>
             <div className="pt-96" />
             <div className="pt-96" />
             <div className="pt-96" />

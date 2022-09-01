@@ -5,3 +5,16 @@
 .bgPrimaryLinearGradient {
     background: linear-gradient(90deg, #ff6d00 0%, #ff4800 100%);
 }
+.mainBannerShadow {
+    filter: drop-shadow(0px 15px 20px rgba(0, 0, 0, 0.3));
+}
+
+.bgHalfOrange {
+    background: linear-gradient(
+        0deg,
+        rgba(249, 115, 22, 0.5) 0%,
+        rgba(249, 115, 22, 0.5) 45%,
+        rgba(249, 115, 22, 0) 45%,
+        rgba(249, 115, 22, 0) 100%
+    );
+}
