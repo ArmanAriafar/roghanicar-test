@@ -89,8 +89,8 @@ const Navigation = () => {
     } else if (screenWidth >= 1024) {
         //* Desktop
         return (
-            <nav className="sticky top-0 z-[200] mx-auto w-full max-w-5xl rounded-b-3xl border-b-4 border-orange-500 bg-white px-8 py-4 shadow-lg shadow-black/20">
-                <div className="flex w-full items-center justify-between">
+            <nav className="sticky top-0 z-[200] mx-auto hidden w-full max-w-5xl rounded-b-3xl border-b-4 border-orange-500 bg-white px-8 py-4 shadow-lg shadow-black/20 lg:block">
+                <section className="flex w-full items-center justify-between">
                     <ul className="grid grid-cols-[auto_auto_auto_auto] items-center justify-items-center gap-x-20">
                         <li>
                             <Link href="/">
@@ -181,7 +181,7 @@ const Navigation = () => {
                             ورود
                         </a>
                     </Link>
-                </div>
+                </section>
             </nav>
         );
     }
