@@ -13,6 +13,35 @@
     filter: drop-shadow(0px 10px 7px rgba(0, 0, 0, 0.2));
 }
 
+.brandCardShadow:hover {
+    filter: none;
+}
+
+.footerContent {
+    overflow: hidden;
+    width: 100%;
+    max-width: 20rem;
+    padding: 1rem 0;
+    max-height: 60px;
+    transition: all 1s ease-in-out;
+}
+
+.footerContent.active {
+    max-height: 200px;
+}
+.footerContent2 {
+    overflow: hidden;
+    width: 100%;
+    max-width: 20rem;
+    padding: 1rem 0;
+    max-height: 60px;
+    transition: all 1s ease-in-out;
+}
+
+.footerContent2.active {
+    max-height: 400px;
+}
+
 .bgHalfOrange {
     background: linear-gradient(
         0deg,

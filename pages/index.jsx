@@ -143,50 +143,71 @@ const HomePage = () => {
                             </h2>
                             <div className="w-full border-t-2 border-dotted border-orange-500" />
                         </header>
-                        <section className="mx-auto mt-10 grid w-full max-w-xs lg:max-w-none grid-cols-2 items-center justify-items-center gap-9 lg:grid-cols-6">
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="موبیل" src="/static/images/موبیل.png" width="121" height="50" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="ایرانول" src="/static/images/ایرانول.png" width="120" height="62" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="الف" src="/static/images/الف.png" width="114" height="58" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="کاسترول" src="/static/images/کاسترول.png" width="125" height="42" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="کاسپین" src="/static/images/کاسپین.png" width="125" height="73" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="بهران" src="/static/images/بهران.png" width="116" height="116" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="توتال" src="/static/images/توتال.png" width="113" height="113" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="اسپیدی" src="/static/images/اسپیدی.png" width="112" height="47" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="سرکان" src="/static/images/سرکان.png" width="107" height="107" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="پروفی-کار" src="/static/images/پروفی-کار.png" width="130" height="68" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="نفت-پارس" src="/static/images/نفت-پارس.png" width="107" height="103" />
-                            </article>
-                            <article className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white">
-                                <Image alt="موتوسل" src="/static/images/موتوسل.png" width="128" height="54" />
-                            </article>
+                        <section className="mx-auto mt-10 grid w-full max-w-xs grid-cols-2 items-center justify-items-center gap-9 lg:max-w-none lg:grid-cols-6">
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "موبیل" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="موبیل" src="/static/images/موبیل.png" width="121" height="50" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "ایرانول" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="ایرانول" src="/static/images/ایرانول.png" width="120" height="62" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "الف" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="الف" src="/static/images/الف.png" width="114" height="58" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "کاسترول" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="کاسترول" src="/static/images/کاسترول.png" width="125" height="42" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "کاسپین" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="کاسپین" src="/static/images/کاسپین.png" width="125" height="73" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "بهران" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="بهران" src="/static/images/بهران.png" width="116" height="116" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "توتال" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="توتال" src="/static/images/توتال.png" width="113" height="113" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "اسپیدی" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="اسپیدی" src="/static/images/اسپیدی.png" width="112" height="47" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "سرکان" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="سرکان" src="/static/images/سرکان.png" width="107" height="107" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "پروفی-کار" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="پروفی-کار" src="/static/images/پروفی-کار.png" width="130" height="68" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "نفت-پارس" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="نفت-پارس" src="/static/images/نفت-پارس.png" width="107" height="103" />
+                                </a>
+                            </Link>
+                            <Link href={{ pathname: "/محصولات", query: { filterBy: "موتوسل" } }}>
+                                <a className="brandCardShadow flex aspect-square w-36 items-center justify-center rounded-2xl bg-white duration-200">
+                                    <Image alt="موتوسل" src="/static/images/موتوسل.png" width="128" height="54" />
+                                </a>
+                            </Link>
                         </section>
                     </section>
                 </article>
             </main>
-            <div className="pt-96" />
-            <div className="pt-96" />
-            <div className="pt-96" />
         </>
     );
 };
