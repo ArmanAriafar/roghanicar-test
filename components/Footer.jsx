@@ -170,7 +170,7 @@ const Footer = () => {
                         </li>
                     </ul>
                     {/* اعتماد به روغنی کار */}
-                    <article className="row-span-3 flex w-fit flex-col items-start justify-start justify-self-end">
+                    <section className="row-span-3 flex w-fit flex-col items-start justify-start justify-self-end">
                         <p className="text-xl font-extrabold text-stone-500">اعتماد به روغنی کار</p>
                         <p className="mt-3 max-w-[15rem] text-sm font-bold text-stone-400">
                             روغنی‌کار، ایمن‌ترین ارائه دهنده محصولات روغن و فیلتر خودرو شما
@@ -206,9 +206,9 @@ const Footer = () => {
                                 />
                             </a>
                         </section>
-                    </article>
+                    </section>
                     {/* با ما در ارتباط باشید */}
-                    <article className="row-span-2 flex w-full flex-col items-start justify-start">
+                    <section className="row-span-2 flex w-full flex-col items-start justify-start">
                         <p className="text-xl font-extrabold text-stone-500">با ما در ارتباط باشید</p>
                         <ul className="mt-4">
                             <li>
@@ -239,14 +239,14 @@ const Footer = () => {
                                 </a>
                             </li>
                         </ul>
-                    </article>
+                    </section>
                     {/* درباره روغنی کار */}
-                    <article className="row-span-2 flex w-fit flex-col items-start justify-start justify-self-center">
+                    <section className="row-span-2 flex w-fit flex-col items-start justify-start justify-self-center">
                         <p className="text-xl font-extrabold text-stone-500">درباره روغنی کار</p>
                         <p className="mt-4 max-w-[17rem] text-sm font-bold text-stone-400">
                             این یک متن ساختگی است. این یک متن ساختگی است.این یک متن ساختگی است.
                         </p>
-                    </article>
+                    </section>
                 </section>
                 <section className="mx-auto flex w-full max-w-5xl items-center justify-between border-t border-t-stone-500 py-5">
                     <p className="text-sm font-bold text-stone-400">
