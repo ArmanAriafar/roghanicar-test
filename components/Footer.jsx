@@ -19,9 +19,9 @@ const Footer = () => {
         //* Mobile
         return (
             <footer className="mt-10 w-full bg-stone-900 pb-40">
-                <section className="flex w-full max-w-md flex-col items-center justify-start pt-5">
+                <section className="mx-auto flex w-full max-w-md flex-col items-center justify-start pt-5">
                     <article className={`footerContent ${active === 1 ? "active" : ""}`} onClick={() => setActive(1)}>
-                        <p className="text-lg font-extrabold text-stone-400" onClick={() => setActive(1)}>
+                        <p className="text-lg font-extrabold text-stone-400 select-none" onClick={() => setActive(1)}>
                             دسترسی سریع
                         </p>
                         <ul className="mt-6 leading-8">
@@ -48,7 +48,7 @@ const Footer = () => {
                         </ul>
                     </article>
                     <article className={`footerContent ${active === 2 ? "active" : ""}`} onClick={() => setActive(2)}>
-                        <p className="text-lg font-extrabold text-stone-400" onClick={() => setActive(2)}>
+                        <p className="text-lg font-extrabold text-stone-400 select-none" onClick={() => setActive(2)}>
                             با ما در ارتباط باشید
                         </p>
                         <ul className="mt-6 leading-8">
@@ -79,7 +79,7 @@ const Footer = () => {
                         </ul>
                     </article>
                     <article className={`footerContent ${active === 3 ? "active" : ""}`} onClick={() => setActive(3)}>
-                        <p className="text-lg font-extrabold text-stone-400" onClick={() => setActive(3)}>
+                        <p className="text-lg font-extrabold text-stone-400 select-none" onClick={() => setActive(3)}>
                             درباره روغنی کار
                         </p>
                         <p className="mt-7 max-w-[17rem] text-sm font-bold text-stone-400">
@@ -87,7 +87,7 @@ const Footer = () => {
                         </p>
                     </article>
                     <article className={`footerContent2 ${active === 4 ? "active" : ""}`} onClick={() => setActive(4)}>
-                        <p className="text-lg font-extrabold text-stone-400" onClick={() => setActive(4)}>
+                        <p className="text-lg font-extrabold text-stone-400 select-none" onClick={() => setActive(4)}>
                             اعتماد به روغنی کار
                         </p>
                         <p className="mt-7 max-w-[14rem] text-sm font-bold text-stone-400">
