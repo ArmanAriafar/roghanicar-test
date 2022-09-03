@@ -52,28 +52,31 @@ const Footer = () => {
                         <p className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(2)}>
                             با ما در ارتباط باشید
                         </p>
-                        <ul className="mt-6 leading-8">
+                        <ul className="mt-7 leading-8">
                             <li>
                                 <a
                                     href="https://instagram.com/roghanicar"
-                                    className="text-base font-bold text-stone-400"
+                                    className="flex items-center justify-start gap-x-1 text-base font-bold text-stone-400"
                                 >
+                                    <RiInstagramFill className="text-lg" />
                                     اینستاگرام
                                 </a>
                             </li>
                             <li>
                                 <a
                                     href="https://wa.me/0989352870073?text=سلام%20یک%20سوال%20داشتم"
-                                    className="text-base font-bold text-stone-400"
+                                    className="flex items-center my-3 justify-start gap-x-1 text-base font-bold text-stone-400"
                                 >
+                                    <RiWhatsappFill className="text-lg" />
                                     واتساپ
                                 </a>
                             </li>
                             <li>
                                 <a
                                     href="https://instagram.com/roghanicar"
-                                    className="text-base font-bold text-stone-400"
+                                    className="flex items-center justify-start gap-x-1 text-base font-bold text-stone-400"
                                 >
+                                    <RiLinkedinBoxFill className="text-lg" />
                                     لینکدین
                                 </a>
                             </li>
