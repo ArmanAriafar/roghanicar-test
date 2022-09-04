@@ -26,6 +26,9 @@ const nextConfig = {
             },
         ];
     },
+    images: {
+        domains: ["s6.uupload.ir"],
+    },
 };
 
 module.exports = nextConfig;

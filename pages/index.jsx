@@ -1,12 +1,31 @@
+//! SSR
+import Http from "../services/HttpServices";
+
+export const getServerSideProps = async (context) => {
+    const { data } = await Http.get("/fake-products");
+    return {
+        props: {
+            resProducts: data,
+        },
+    };
+};
+
+//* --------------------------------------------------
+
 //! Required
 import Image from "next/image";
 import Link from "next/link";
 import Navigation from "../components/Navigation";
 import Head from "next/head";
 
+//! Icon
 import { RiCheckboxFill, RiGridLine, RiOilFill, RiUserAddFill } from "react-icons/ri";
 
-const HomePage = () => {
+//! Comps
+import Slider from "../components/ui/Slider";
+
+//! Comp
+const HomePage = ({ resProducts }) => {
     return (
         <>
             <Head>
@@ -123,24 +142,52 @@ const HomePage = () => {
                             </h1>
                             <div className="w-full border-t-2 border-dotted border-orange-500" />
                         </header>
+                        <section className="flex w-full flex-wrap items-center justify-center gap-x-5">
+                            <Slider
+                                data={resProducts
+                                    .filter(
+                                        (i) =>
+                                            i.productType === "روغن موتور" ||
+                                            i.productType === "روغن ترمز" ||
+                                            i.productType === "روغن هیدرولیک" ||
+                                            i.productType === "روغن گیربکس"
+                                    )
+                                    .sort((a, b) => b.sails - a.sails)
+                                    .slice(0, 10)}
+                            />
+                        </section>
                     </section>
                     {/* Best Sellers | Filter */}
-                    <section className="mt-14 flex w-full flex-col items-start justify-start">
+                    <section className="mt-8 flex w-full flex-col items-start justify-start">
                         <header className="flex w-full items-center justify-center gap-x-2">
-                            <h2 className="bgHalfOrangeAlpha flex items-center justify-center gap-x-1 whitespace-nowrap text-base font-black text-orange-500">
+                            <h1 className="bgHalfOrangeAlpha flex items-center justify-center gap-x-1 whitespace-nowrap text-base font-black text-orange-500">
                                 <RiGridLine className="text-xl" />
                                 پرفروشترین‌ها | فیلتر
-                            </h2>
+                            </h1>
                             <div className="w-full border-t-2 border-dotted border-orange-500" />
                         </header>
+                        <section className="flex w-full flex-wrap items-center justify-center gap-x-5">
+                            <Slider
+                                data={resProducts
+                                    .filter(
+                                        (i) =>
+                                            i.productType === "فیلتر روغن" ||
+                                            i.productType === "فیلتر هوا" ||
+                                            i.productType === "فیلتر سوخت" ||
+                                            i.productType === "فیلتر کابین"
+                                    )
+                                    .sort((a, b) => b.sails - a.sails)
+                                    .slice(0, 10)}
+                            />
+                        </section>
                     </section>
                     {/* Brands */}
                     <section className="mt-14 flex w-full flex-col items-start justify-start">
                         <header className="flex w-full items-center justify-center gap-x-2">
-                            <h2 className="bgHalfOrangeAlpha flex items-center justify-center gap-x-1 whitespace-nowrap text-base font-black text-orange-500">
+                            <h1 className="bgHalfOrangeAlpha flex items-center justify-center gap-x-1 whitespace-nowrap text-base font-black text-orange-500">
                                 <RiCheckboxFill className="text-xl" />
                                 برندها و شرکت‌های سازنده
-                            </h2>
+                            </h1>
                             <div className="w-full border-t-2 border-dotted border-orange-500" />
                         </header>
                         <section className="mx-auto mt-10 grid w-full max-w-xs grid-cols-2 items-center justify-items-center gap-9 lg:max-w-none lg:grid-cols-6">

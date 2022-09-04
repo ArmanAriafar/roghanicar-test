@@ -21,9 +21,9 @@ const Footer = () => {
             <footer className="mt-10 block w-full bg-stone-900 pb-40 lg:hidden">
                 <section className="mx-auto flex w-full max-w-md flex-col items-center justify-start pt-5">
                     <article className={`footerContent ${active === 1 ? "active" : ""}`} onClick={() => setActive(1)}>
-                        <p className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(1)}>
+                        <h6 className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(1)}>
                             دسترسی سریع
-                        </p>
+                        </h6>
                         <ul className="mt-6 leading-8">
                             <li>
                                 <Link href="/محصولات">
@@ -49,9 +49,9 @@ const Footer = () => {
                     </article>
                     {/* با ما در ارتباط باشید */}
                     <article className={`footerContent ${active === 2 ? "active" : ""}`} onClick={() => setActive(2)}>
-                        <p className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(2)}>
+                        <h6 className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(2)}>
                             با ما در ارتباط باشید
-                        </p>
+                        </h6>
                         <ul className="mt-7 leading-8">
                             <li>
                                 <a
@@ -65,7 +65,7 @@ const Footer = () => {
                             <li>
                                 <a
                                     href="https://wa.me/0989352870073?text=سلام%20یک%20سوال%20داشتم"
-                                    className="flex items-center my-3 justify-start gap-x-1 text-base font-bold text-stone-400"
+                                    className="my-3 flex items-center justify-start gap-x-1 text-base font-bold text-stone-400"
                                 >
                                     <RiWhatsappFill className="text-lg" />
                                     واتساپ
@@ -84,18 +84,18 @@ const Footer = () => {
                     </article>
                     {/* درباره روغنی کار */}
                     <article className={`footerContent ${active === 3 ? "active" : ""}`} onClick={() => setActive(3)}>
-                        <p className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(3)}>
+                        <h6 className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(3)}>
                             درباره روغنی کار
-                        </p>
+                        </h6>
                         <p className="mt-7 max-w-[17rem] text-sm font-bold text-stone-400">
                             این یک متن ساختگی است. این یک متن ساختگی است.این یک متن ساختگی است.
                         </p>
                     </article>
                     {/* اعتماد به روغنی کار */}
                     <article className={`footerContent2 ${active === 4 ? "active" : ""}`} onClick={() => setActive(4)}>
-                        <p className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(4)}>
+                        <h6 className="select-none text-lg font-extrabold text-stone-400" onClick={() => setActive(4)}>
                             اعتماد به روغنی کار
-                        </p>
+                        </h6>
                         <p className="mt-7 max-w-[14rem] text-sm font-bold text-stone-400">
                             روغنی‌کار، ایمن‌ترین ارائه دهنده محصولات روغن و فیلتر خودرو شما
                         </p>
@@ -132,7 +132,7 @@ const Footer = () => {
                         </section>
                     </article>
                     <section className="grid w-full max-w-xs grid-cols-2 grid-rows-2 items-center justify-items-center gap-y-2 border-t-2 border-t-stone-700 py-5">
-                        <p className="justify-self-start pr-1 text-xl font-thin text-stone-500">روغنی کار</p>
+                        <h6 className="justify-self-start pr-1 text-xl font-thin text-stone-500">روغنی کار</h6>
                         <p className="justify-self-end pl-1 text-sm font-bold text-stone-500">
                             آدرس: بازار <span className="font-thin">بزرگ</span> تهران
                         </p>
@@ -174,7 +174,7 @@ const Footer = () => {
                     </ul>
                     {/* اعتماد به روغنی کار */}
                     <section className="row-span-3 flex w-fit flex-col items-start justify-start justify-self-end">
-                        <p className="text-xl font-extrabold text-stone-500">اعتماد به روغنی کار</p>
+                        <h6 className="text-xl font-extrabold text-stone-500">اعتماد به روغنی کار</h6>
                         <p className="mt-3 max-w-[15rem] text-sm font-bold text-stone-400">
                             روغنی‌کار، ایمن‌ترین ارائه دهنده محصولات روغن و فیلتر خودرو شما
                         </p>
@@ -212,7 +212,7 @@ const Footer = () => {
                     </section>
                     {/* با ما در ارتباط باشید */}
                     <section className="row-span-2 flex w-full flex-col items-start justify-start">
-                        <p className="text-xl font-extrabold text-stone-500">با ما در ارتباط باشید</p>
+                        <h6 className="text-xl font-extrabold text-stone-500">با ما در ارتباط باشید</h6>
                         <ul className="mt-4">
                             <li>
                                 <a
@@ -245,7 +245,7 @@ const Footer = () => {
                     </section>
                     {/* درباره روغنی کار */}
                     <section className="row-span-2 flex w-fit flex-col items-start justify-start justify-self-center">
-                        <p className="text-xl font-extrabold text-stone-500">درباره روغنی کار</p>
+                        <h6 className="text-xl font-extrabold text-stone-500">درباره روغنی کار</h6>
                         <p className="mt-4 max-w-[17rem] text-sm font-bold text-stone-400">
                             این یک متن ساختگی است. این یک متن ساختگی است.این یک متن ساختگی است.
                         </p>
