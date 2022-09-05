@@ -1,9 +1,16 @@
+//! Required
+import Head from "next/head";
+
+//! Comp
 const ProductsPage = () => {
     return (
         <>
-            <div>
+            <Head>
+                <title>Title</title>
+            </Head>
+            <main>
                 <>ProductsPage</>
-            </div>
+            </main>
         </>
     );
 };

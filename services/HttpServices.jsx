@@ -1,6 +1,6 @@
 import axios from "axios";
 
-axios.defaults.baseURL = "https://roghanicar-test.vercel.app/api";
+axios.defaults.baseURL = "http://localhost:3000/api";
 
 const Http = {
     get: axios.get,

@@ -32,7 +32,7 @@ const HomePage = ({ resProducts }) => {
                 <title>🚗 روغنی کار | فروش انواع روغن موتور و فیلتر خودرو 🚗</title>
                 <meta
                     name="description"
-                    content="روغن موتور | فروش روغن موتور | قیمت روغن موتور | فیلتر هوا | فیلتر روغن | ضد یخ"
+                    content="روغنی کار : خرید انواع روغن و فیلتر خودرو | روغن موتور | فروش روغن موتور | قیمت روغن موتور | فیلتر هوا | فیلتر روغن | ضد یخ"
                 />
             </Head>
             <header className="bgPrimaryLinearGradient sticky top-0 z-[199] mx-auto w-full py-3 lg:relative lg:top-auto">

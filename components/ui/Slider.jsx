@@ -9,7 +9,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 // import required modules
-import { Pagination } from "swiper";
+import { Pagination, Autoplay } from "swiper";
 
 //! Comps
 import Product from "../Product";
@@ -30,11 +30,13 @@ const Slider = ({ data }) => {
                     "--swiper-theme-color": "#f97316",
                 }}
                 slidesPerView={3}
+                spaceBetween={20}
                 pagination={{
                     clickable: true,
                 }}
-                modules={[Pagination]}
-                className="!p-0 lg:!pt-8 lg:!pb-12"
+                autoplay={{ delay: 4000, disableOnInteraction: false }}
+                modules={screenWidth >= 1024 ? [Pagination, Autoplay] : [Autoplay]}
+                className="min-h-[32.5rem] w-fit !p-0 !px-4 lg:min-h-fit lg:w-full lg:!pt-8 lg:!pb-12"
             >
                 {data.map((i, index) => {
                     return (
